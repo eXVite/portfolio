@@ -5,9 +5,18 @@ const LightTheme = {
   colors: {
     baseText: "#3F454A",
     white: "#FFFF",
-    primary: "#0D6EFD",
-    secondary: "#20C997",
-    grey500: "#818181",
+    primary500: "#0D6EFD",
+    primary100: "#A9CCFF",
+    secondary500: "#20C997",
+    grey600: "#6C757D",
+    grey500: "#8B8B8B",
+  },
+  fontSizes: {
+    xxs: "0.625rem",
+    xs: "0.75rem",
+    s: "0.875rem",
+    m: "1rem",
+    xl: "1.5rem",
   },
 };
 export default LightTheme;
