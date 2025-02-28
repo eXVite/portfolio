@@ -7,15 +7,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 7.1rem);
-  padding-top: 13vh;
+  height: calc(100vh - 12.1rem);
+  min-height: 30rem;
+  padding-top: 20vh;
   gap: 0.5rem;
   box-sizing: border-box;
+  position: relative;
 `;
 
 const Image = styled.img`
-  height: 6rem;
-  width: 6rem;
+  height: 10rem;
+  width: 10rem;
   background-color: grey;
   border-radius: 6rem;
 `;
@@ -67,7 +69,7 @@ const Hello = () => {
 
   return (
     <Container>
-      <Image />
+      <Image src="/images/joel_hello.webp" />
       <Title
         dangerouslySetInnerHTML={{
           __html: t("hello_title", "Hola, <b>soy Joel</b>"),

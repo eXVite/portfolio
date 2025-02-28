@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "../../components/portfolio/Header";
 import Hello from "../../components/portfolio/Hello";
+import Technologies from "../../components/portfolio/Technologies";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColors.baseBackGround};
@@ -31,13 +32,25 @@ const HorizontalLineWrapper = styled.div`
 
   @media (max-width: 1200px) {
     > div {
-      margin: 0 5rem;
+      margin: 0 7.5rem;
     }
   }
 
   @media (max-width: 1200px) {
     > div {
-      margin: 0 2.5rem;
+      margin: 0 5rem;
+    }
+  }
+
+  @media (max-width: 603px) {
+    > div {
+      margin: 0 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    > div {
+      margin: 0;
     }
   }
 `;
@@ -50,6 +63,9 @@ const Portfolio = () => {
       </HorizontalLineWrapper>
       <HorizontalLineWrapper>
         <Hello />
+      </HorizontalLineWrapper>
+      <HorizontalLineWrapper>
+        <Technologies />
       </HorizontalLineWrapper>
     </Container>
   );
