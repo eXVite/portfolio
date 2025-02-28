@@ -1,14 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useTranslate } from "../../hooks/useTranslate";
 import Pill from "../pill/Pill";
+import Icon from "../icon/Icon";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 7.1rem);
+  padding-top: 13vh;
   gap: 0.5rem;
+  box-sizing: border-box;
 `;
 
 const Image = styled.img`
@@ -44,6 +46,22 @@ const PillsContainer = styled.div`
   gap: 1rem;
 `;
 
+const bubbleFloat = keyframes`
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+`;
+
+const BottomArrowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 3vh;
+  animation: ${bubbleFloat} 4s ease-in-out infinite;
+`;
+
 const Hello = () => {
   const { t } = useTranslate();
 
@@ -68,6 +86,10 @@ const Hello = () => {
         <Pill text="Github" icon="github" size="13px" />
         <Pill text="Joeliglesiasjimenez@gmail.com" icon="gmail" size="10px" />
       </PillsContainer>
+      <BottomArrowContainer>
+        <Icon icon="demos" />
+        <Icon icon="arrow" />
+      </BottomArrowContainer>
     </Container>
   );
 };

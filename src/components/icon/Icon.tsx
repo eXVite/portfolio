@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const Container = styled.div<{ size: string; color?: string }>`
+const Container = styled.div<{ size?: string; color?: string }>`
   height: ${(props) => props.size};
   display: flex;
   justify-content: center;
@@ -19,8 +19,8 @@ const Container = styled.div<{ size: string; color?: string }>`
 
 interface IconProps {
   icon: string;
-  size: string;
-  color: string;
+  size?: string;
+  color?: string;
 }
 const Icon = (props: IconProps) => {
   const [svgContent, setSvgContent] = useState("");

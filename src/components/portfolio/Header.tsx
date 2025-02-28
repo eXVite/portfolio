@@ -41,7 +41,7 @@ const Header = () => {
     <Container>
       <HeaderWrapper>
         {ITEMS.map((item) => (
-          <HeaderItem href={item.href}>{item.name}</HeaderItem>
+          <HeaderItem href={`#${item.href}`}>{item.name}</HeaderItem>
         ))}
       </HeaderWrapper>
     </Container>

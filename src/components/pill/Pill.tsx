@@ -7,9 +7,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 2rem;
   gap: 0.25rem;
+  height: 1.25rem;
+  box-sizing: border-box;
   background: rgb(13, 110, 253);
   background: linear-gradient(
     90deg,
@@ -22,6 +24,7 @@ const Container = styled.div`
 
 const Text = styled.span`
   font-size: ${(props) => props.theme.fontSizes.xxs};
+  line-height: ${(props) => props.theme.fontSizes.xxs};
   max-width: 20rem;
   text-align: center;
   font-weight: 600;
