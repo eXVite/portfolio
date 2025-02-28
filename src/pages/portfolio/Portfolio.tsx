@@ -18,6 +18,7 @@ const HorizontalLineWrapper = styled.div`
 
   > div {
     width: 80rem;
+    box-sizing: border-box;
     border: 1px solid ${(props) => props.theme.colors.grey500};
     border-top: none;
     border-bottom: none;
