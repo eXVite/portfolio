@@ -43,7 +43,7 @@ const Technologies = () => {
 
   return (
     <Container>
-      <BoxGroup left={true}>
+      <BoxGroup id="Demos" left={true}>
         <Box>
           <Icon icon="sc" size="47px" />
         </Box>

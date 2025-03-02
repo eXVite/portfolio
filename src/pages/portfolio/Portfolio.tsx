@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "../../components/portfolio/Header";
 import Hello from "../../components/portfolio/Hello";
 import Technologies from "../../components/portfolio/Technologies";
+import Proyects from "../../components/portfolio/Proyects";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColors.baseBackGround};
@@ -67,6 +68,9 @@ const Portfolio = () => {
       </HorizontalLineWrapper>
       <HorizontalLineWrapper>
         <Technologies />
+      </HorizontalLineWrapper>
+      <HorizontalLineWrapper>
+        <Proyects />
       </HorizontalLineWrapper>
     </Container>
   );
