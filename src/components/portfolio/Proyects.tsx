@@ -104,6 +104,7 @@ const SmallProyectItem = styled.div`
 const Image = styled.img<{ height: string }>`
   height: ${(props) => props.height};
   border-radius: 1rem;
+  border: 2px solid ${(props) => props.theme.colors.baseText};
 `;
 
 const Proyects = () => {

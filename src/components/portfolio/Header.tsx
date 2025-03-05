@@ -18,7 +18,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   box-sizing: border-box;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 24%);
-  position: sticky;
 `;
 
 const HeaderItem = styled.a`
