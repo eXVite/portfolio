@@ -24,6 +24,7 @@ const DescContainer = styled.div`
 const TitleDescContainer = styled.div`
   display: flex;
   gap: 3rem;
+  justify-content: center;
   padding: 0 7rem;
   @media (max-width: 1250px) {
     flex-direction: column;
