@@ -12,6 +12,9 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   max-width: 11rem;
   display: flex;
+  @media (max-width: 1250px) {
+    max-width: fit-content;
+  }
 `;
 
 const DescContainer = styled.div`
@@ -22,6 +25,14 @@ const TitleDescContainer = styled.div`
   display: flex;
   gap: 3rem;
   padding: 0 7rem;
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 3.5rem;
+  }
 `;
 
 const ProyectsContainer = styled.div`
@@ -38,49 +49,56 @@ const ProyectsContainer = styled.div`
     );
   background-size: 25px 25px;
   background-position: -8.5px -8.5px; /* Ajusta la posición para eliminar bordes */
+  padding: 4rem;
+  box-sizing: border-box;
+
+  @media (max-width: 660px) {
+    padding: 2rem;
+  }
 `;
 
 const ProyectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-  box-sizing: border-box;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1500px) {
+    flex-direction: column;
+  }
 `;
 
 const BigProyectItem = styled.div`
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 7rem;
+  @media (max-width: 1500px) {
+    > img {
+      max-height: 15rem;
+    }
+  }
+
+  @media (max-width: 820px) {
+    > img {
+      max-height: 8rem;
+    }
+  }
 `;
 
 const SmallProyectItem = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  gap: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 4rem 0 7rem;
-  padding-left: 7rem;
-`;
-
-const SmallProyectItem2 = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 4rem 0 4rem 7rem;
-  align-items: center;
+  flex-direction: column;
+  @media (max-width: 1500px) {
+    > img {
+      max-height: 15rem;
+    }
+  }
+  @media (max-width: 820px) {
+    > img {
+      max-height: 8rem;
+    }
+  }
 `;
 
 const Image = styled.img<{ height: string }>`
@@ -115,14 +133,10 @@ const Proyects = () => {
       <ProyectsContainer>
         <ProyectsGrid>
           <SmallProyectItem>
-            <Image src="/images/proyects/dashboard.webp" height={"15rem"} />
-          </SmallProyectItem>
-          <SmallProyectItem2>
-            {" "}
+            <Image src="/images/proyects/dashboard.webp" height={"100%"} />
             <Image src="/images/proyects/landing.webp" height={"12rem"} />
-          </SmallProyectItem2>
+          </SmallProyectItem>
           <BigProyectItem>
-            {" "}
             <Image src="/images/proyects/pizarra.webp" height={"15rem"} />
           </BigProyectItem>
         </ProyectsGrid>
