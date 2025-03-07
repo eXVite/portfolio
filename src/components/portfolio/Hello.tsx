@@ -69,7 +69,7 @@ const Hello = () => {
 
   return (
     <Container>
-      <Image src="/images/joel_hello.webp" />
+      <Image alt="Imagen personal" src="/images/joel_hello.webp" />
       <Title
         dangerouslySetInnerHTML={{
           __html: t("hello_title", "Hola, <b>soy Joel</b>"),
@@ -79,7 +79,7 @@ const Hello = () => {
         dangerouslySetInnerHTML={{
           __html: t(
             "hello_desc",
-            "+4 años de experiencia en <span>desarrollo</span> web. Especializado en aplicaciones web potentes y escalables. 🚀>"
+            "+4 años de experiencia en <span>desarrollo</span> web. Especializado en aplicaciones web potentes y escalables. 🚀"
           ),
         }}
       />

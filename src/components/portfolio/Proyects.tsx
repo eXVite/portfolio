@@ -135,11 +135,23 @@ const Proyects = () => {
       <ProyectsContainer>
         <ProyectsGrid>
           <SmallProyectItem>
-            <Image src="/images/proyects/dashboard.webp" height={"100%"} />
-            <Image src="/images/proyects/landing.webp" height={"12rem"} />
+            <Image
+              alt="Proyect image1"
+              src="/images/proyects/dashboard.webp"
+              height={"100%"}
+            />
+            <Image
+              alt="Proyect image2"
+              src="/images/proyects/landing.webp"
+              height={"12rem"}
+            />
           </SmallProyectItem>
           <BigProyectItem>
-            <Image src="/images/proyects/pizarra.webp" height={"15rem"} />
+            <Image
+              alt="Proyect image3"
+              src="/images/proyects/pizarra.webp"
+              height={"15rem"}
+            />
           </BigProyectItem>
         </ProyectsGrid>
       </ProyectsContainer>

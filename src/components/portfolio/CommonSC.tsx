@@ -18,6 +18,7 @@ export const Description = styled.span`
   color: ${(props) => props.theme.colors.baseText};
 
   > span {
+    font-size: ${(props) => props.theme.fontSizes.m};
     color: ${(props) => props.theme.colors.secondary500};
   }
 

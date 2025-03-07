@@ -124,6 +124,7 @@ const DescSpan = styled.span`
   max-width: 20rem;
 
   > span {
+    font-weight: 700;
     color: ${(props) => props.theme.colors.secondary500};
   }
 
@@ -139,11 +140,11 @@ const Experience = () => {
   const data = useRef(getExperienceData());
 
   return (
-    <Container>
+    <Container id="Experiencia">
       <TitleContainer>
         <Title
           dangerouslySetInnerHTML={{
-            __html: t("experience_title", "Experiencia<span>.</span>"),
+            __html: t("experience_title", "Experiencia laboral<span>.</span>"),
           }}
         />
       </TitleContainer>
