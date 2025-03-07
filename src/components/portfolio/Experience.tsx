@@ -11,17 +11,30 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 666px) {
+    padding: 2rem 0rem;
+  }
 `;
 
 const TitleContainer = styled.div`
-  padding-left: 21rem;
   width: 100%;
+  display: flex;
+  @media (max-width: 666px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const TimeLineContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (max-width: 666px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const TimeLineItem = styled.div`
@@ -30,6 +43,20 @@ const TimeLineItem = styled.div`
   align-items: center;
   min-height: 7rem;
   gap: 5rem;
+
+  @media (max-width: 1100px) {
+    gap: 3rem;
+  }
+  @media (max-width: 1100px) {
+    gap: 1rem;
+  }
+
+  @media (max-width: 870px) {
+    min-height: 10rem;
+  }
+  @media (max-width: 800px) {
+    justify-content: left;
+  }
 `;
 
 const InfoWrapper = styled.div`
@@ -77,6 +104,10 @@ const TimeLineComponent = styled.div<{ type: TimeLineComponentType }>`
       : props.type === TimeLineComponentType.Bottom
       ? "0 0 1rem 1rem"
       : 0};
+
+  @media (max-width: 870px) {
+    min-height: 10rem;
+  }
 `;
 
 const TimeLineDot = styled.div`
@@ -94,6 +125,10 @@ const DescSpan = styled.span`
 
   > span {
     color: ${(props) => props.theme.colors.secondary500};
+  }
+
+  @media (max-width: 800px) {
+    display: none;
   }
 `;
 
