@@ -9,7 +9,6 @@ const Container = styled.div`
   gap: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   @media (max-width: 666px) {
@@ -121,7 +120,6 @@ const DescSpan = styled.span`
   width: 100%;
   font-size: ${(props) => props.theme.fontSizes.s};
   line-height: ${(props) => props.theme.fontSizes.s};
-  max-width: 20rem;
 
   > span {
     font-weight: 700;

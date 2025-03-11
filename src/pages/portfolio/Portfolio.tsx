@@ -4,6 +4,7 @@ import Hello from "../../components/portfolio/Hello";
 import Technologies from "../../components/portfolio/Technologies";
 import Proyects from "../../components/portfolio/Proyects";
 import Experience from "../../components/portfolio/Experience";
+import AboutMe from "../../components/portfolio/AboutMe";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.backgroundColors.baseBackGround};
@@ -75,6 +76,9 @@ const Portfolio = () => {
       </HorizontalLineWrapper>
       <HorizontalLineWrapper>
         <Experience />
+      </HorizontalLineWrapper>
+      <HorizontalLineWrapper>
+        <AboutMe />
       </HorizontalLineWrapper>
     </Container>
   );

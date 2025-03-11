@@ -24,14 +24,11 @@ const DescContainer = styled.div`
 const TitleDescContainer = styled.div`
   display: flex;
   gap: 3rem;
-  justify-content: center;
   padding: 0 7rem;
-  @media (max-width: 1250px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     gap: 1rem;
-    text-align: center;
     padding: 0 3.5rem;
   }
 `;
