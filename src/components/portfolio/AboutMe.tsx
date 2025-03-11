@@ -62,7 +62,7 @@ const AboutMe = () => {
           dangerouslySetInnerHTML={{
             __html: t(
               "about_me_title",
-              "Tego un prtfolio soy desarrollador de aplicaciones, en ese portfolio muestro proyectos mios mi foto mi stack tecnologico y el ultimo apartado es un apartado que habla sobre mi, quiero explicar que soy un desarrollador web full stack con mas de 4 años de experiencia profesional, con ganas de seguir aprendiendo, y abierto a cualquier proyecto de forma freelance, haz un texto que explique esto de forma legible y que no sea un toston<span>.</span>"
+              "¡Hola! 👋 Soy un <span>desarrollador web Full Stack</span> con más de <span>4 años de experiencia profesional</span> en el sector. Me apasiona el mundo del desarrollo y el <span>aprendizaje continuo</span>. Me describiría como alguien enfocado en <span>hacer las cosas bien</span>, siempre buscando la mejor solución para cada proyecto.<br/><br/>📌 Actualmente, estoy dedicando tiempo a <span>mis proyectos personales</span> mientras trabajo, con el objetivo de <span>seguir mejorando</span> en todos los aspectos y ofrecer <span>servicios de mayor calidad</span>.<br/><br/>💻 Tengo experiencia en <span>todo tipo de aplicaciones</span>: desde <span>plataformas online con alto tráfico</span> e <span>interacciones en tiempo real</span>, incluyendo <span>integraciones con IA</span>, hasta <span>sistemas de gestión interna</span> para empresas.<br/><br/>🚀 Siempre estoy abierto a <span>nuevos retos y proyectos freelance</span>. Si tienes una idea en mente, <span>¡hablemos!</span>"
             ),
           }}
         />
