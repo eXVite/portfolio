@@ -14,6 +14,9 @@ const Container = styled.div<{ size?: string; color?: string }>`
     g {
       fill: ${(props) => props.color};
     }
+    path {
+      fill: ${(props) => props.color};
+    }
   }
 `;
 

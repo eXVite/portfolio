@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Header from "../../components/portfolio/Header";
 import Hello from "../../components/portfolio/Hello";
 import Technologies from "../../components/portfolio/Technologies";
-import Proyects from "../../components/portfolio/Proyects";
+import Proyects from "../../components/portfolio/Proyects/Proyects";
 import Experience from "../../components/portfolio/Experience";
 import AboutMe from "../../components/portfolio/AboutMe";
 
