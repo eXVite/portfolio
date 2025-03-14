@@ -97,7 +97,7 @@ const OpenButton = styled.div`
   background-color: ${(props) => props.theme.colors.primary500};
   border-radius: 0.5rem;
   border: none;
-  height: 2rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -111,10 +111,6 @@ const OpenButton = styled.div`
     color: ${(props) => props.theme.colors.white};
     font-weight: 600;
     line-height: 1;
-  }
-
-  @media (max-width: 1045px) {
-    height: 3rem;
   }
 `;
 
