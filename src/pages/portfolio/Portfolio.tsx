@@ -80,6 +80,9 @@ const Portfolio = () => {
       <HorizontalLineWrapper>
         <AboutMe />
       </HorizontalLineWrapper>
+      <HorizontalLineWrapper>
+        <Header />
+      </HorizontalLineWrapper>
     </Container>
   );
 };

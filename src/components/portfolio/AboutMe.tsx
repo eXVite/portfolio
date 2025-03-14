@@ -9,7 +9,7 @@ const Container = styled.div`
   flex-direction: column;
 
   @media (max-width: 666px) {
-    padding: 2rem 0rem;
+    padding: 2rem 3rem;
   }
 `;
 
@@ -25,6 +25,12 @@ const TitleContainer = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   gap: 3rem;
+
+  @media (max-width: 1505px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Image = styled.img`
@@ -35,7 +41,7 @@ const Image = styled.img`
 `;
 
 const DescSpan = styled.span`
-  width: 24rem;
+  width: 40rem;
   font-size: ${(props) => props.theme.fontSizes.m};
   line-height: ${(props) => props.theme.fontSizes.m};
 
@@ -43,12 +49,16 @@ const DescSpan = styled.span`
     font-weight: 700;
     color: ${(props) => props.theme.colors.secondary500};
   }
+
+  @media (max-width: 1505px) {
+    width: 100%;
+  }
 `;
 
 const AboutMe = () => {
   const { t } = useTranslate();
   return (
-    <Container>
+    <Container id="Sobremi">
       <TitleContainer>
         <Title
           dangerouslySetInnerHTML={{
