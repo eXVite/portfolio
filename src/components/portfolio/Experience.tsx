@@ -2,7 +2,7 @@ import styled, { ThemeContext } from "styled-components";
 import { Title } from "./CommonSC";
 import { useTranslate } from "../../hooks/useTranslate";
 import useExperienceData from "../../hooks/useExperienceData";
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 
 const Container = styled.div`
   padding: 2rem 7rem;
@@ -134,8 +134,7 @@ const DescSpan = styled.span`
 const Experience = () => {
   const { t } = useTranslate();
   const theme = useContext(ThemeContext)!;
-  const { getExperienceData } = useExperienceData();
-  const data = useRef(getExperienceData());
+  const { experienceData } = useExperienceData();
 
   return (
     <Container id="Experiencia">
@@ -147,7 +146,7 @@ const Experience = () => {
         />
       </TitleContainer>
       <TimeLineContainer>
-        {data.current.map((dataItem, index) => (
+        {experienceData.map((dataItem, index) => (
           <TimeLineItem key={dataItem.Title}>
             <InfoWrapper>
               <InfoTitle color={theme.colors.primary500}>
@@ -162,7 +161,7 @@ const Experience = () => {
               type={
                 index == 0
                   ? TimeLineComponentType.Top
-                  : index == data.current.length - 1
+                  : index == experienceData.length - 1
                   ? TimeLineComponentType.Bottom
                   : TimeLineComponentType.Center
               }
