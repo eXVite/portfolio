@@ -43,14 +43,14 @@ const Image = styled.img`
 const DescSpan = styled.span`
   width: 40rem;
   font-size: ${(props) => props.theme.fontSizes.m};
-  line-height: ${(props) => props.theme.fontSizes.m};
+  line-height: calc(${(props) => props.theme.fontSizes.m} * 1.5);
 
   > span {
     font-weight: 700;
     color: ${(props) => props.theme.colors.secondary500};
   }
 
-  @media (max-width: 1505px) {
+  @media (max-width: 1300px) {
     width: 100%;
   }
 `;
@@ -71,8 +71,8 @@ const AboutMe = () => {
         <DescSpan
           dangerouslySetInnerHTML={{
             __html: t(
-              "about_me_title",
-              "¡Hola! 👋 Soy un <span>desarrollador web Full Stack</span> con más de <span>4 años de experiencia profesional</span> en el sector. Me apasiona el mundo del desarrollo y el <span>aprendizaje continuo</span>. Me describiría como alguien enfocado en <span>hacer las cosas bien</span>, siempre buscando la mejor solución para cada proyecto.<br/><br/>📌 Actualmente, estoy dedicando tiempo a <span>mis proyectos personales</span> mientras trabajo, con el objetivo de <span>seguir mejorando</span> en todos los aspectos y ofrecer <span>servicios de mayor calidad</span>.<br/><br/>💻 Tengo experiencia en <span>todo tipo de aplicaciones</span>: desde <span>plataformas online con alto tráfico</span> e <span>interacciones en tiempo real</span>, incluyendo <span>integraciones con IA</span>, hasta <span>sistemas de gestión interna</span> para empresas.<br/><br/>🚀 Siempre estoy abierto a <span>nuevos retos y proyectos freelance</span>. Si tienes una idea en mente, <span>¡hablemos!</span>"
+              "about_me_desc",
+              "¡Hola! 👋 Soy un <span>desarrollador web Full Stack</span> con más de <span>4 años de experiencia profesional</span> en el sector. Me apasiona el mundo del desarrollo y el aprendizaje continuo. Me describiría como alguien enfocado en hacer las cosas bien, siempre buscando la mejor solución para cada proyecto.<br/><br/>📌 Actualmente, estoy dedicando tiempo a <span>mis proyectos personales</span> mientras trabajo, con el objetivo de seguir mejorando en todos los aspectos y ofrecer <span>servicios de mayor calidad</span>.<br/><br/>💻 Tengo experiencia en <span>todo tipo de aplicaciones</span>: desde plataformas online con <span>alto tráfico</span> e <span>interacciones en tiempo real</span>, hasta sistemas de <span>gestión interna</span> para <span>empresas</span>.<br/><br/>🚀 Siempre estoy abierto a <span>nuevos retos</span> y <span>proyectos freelance</span>. Si tienes una <span>idea</span> en mente, <span>¡hablemos!</span>"
             ),
           }}
         />
