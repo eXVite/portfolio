@@ -68,7 +68,7 @@ const Hello = () => {
   const { t } = useTranslate();
 
   return (
-    <Container>
+    <Container id="Inicio">
       <Image alt="Imagen personal" src="/images/joel_hello.webp" />
       <Title
         dangerouslySetInnerHTML={{
@@ -84,9 +84,24 @@ const Hello = () => {
         }}
       />
       <PillsContainer>
-        <Pill text="Linkedin" icon="linkedin" size="10px" />
-        <Pill text="Github" icon="github" size="13px" />
-        <Pill text="Joeliglesiasjimenez@gmail.com" icon="gmail" size="10px" />
+        <Pill
+          text="Linkedin"
+          icon="linkedin"
+          size="13px"
+          redirectUrl="https://www.linkedin.com/in/joel-iglesias-jimenez-850624184/"
+        />
+        <Pill
+          text="Github"
+          icon="github"
+          size="16px"
+          redirectUrl="https://github.com/"
+        />
+        <Pill
+          text="Joeliglesiasjimenez@gmail.com"
+          icon="gmail"
+          size="13px"
+          redirectUrl="mailto:joeliglesiasjimenez@gmail.com"
+        />
       </PillsContainer>
       <BottomArrowContainer>
         <Icon icon="demos" />

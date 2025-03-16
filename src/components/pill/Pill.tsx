@@ -10,21 +10,20 @@ const Container = styled.div`
   padding: 0.25rem 0.5rem;
   border-radius: 2rem;
   gap: 0.25rem;
-  height: 1.25rem;
+  height: 1.5rem;
   box-sizing: border-box;
   background: rgb(13, 110, 253);
   background: linear-gradient(
     90deg,
     rgba(13, 110, 253, 0.2) 20%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(13, 110, 253, 0.19663280229476487) 80%
+    rgba(13, 207, 253, 0.19663280229476487) 80%
   );
   cursor: pointer;
 `;
 
 const Text = styled.span`
-  font-size: ${(props) => props.theme.fontSizes.xxs};
-  line-height: ${(props) => props.theme.fontSizes.xxs};
+  font-size: ${(props) => props.theme.fontSizes.xs};
+  line-height: ${(props) => props.theme.fontSizes.xs};
   max-width: 20rem;
   text-align: center;
   font-weight: 600;
@@ -38,13 +37,18 @@ interface PillProps {
   text: string;
   icon: string;
   size: string;
+  redirectUrl: string;
 }
 
 const Pill = (props: PillProps) => {
   const theme = useContext(ThemeContext)!;
 
+  const redirect = () => {
+    window.open(props.redirectUrl, "_blank");
+  };
+
   return (
-    <Container>
+    <Container onClick={redirect}>
       <Icon icon={props.icon} color={theme.colors.grey700} size={props.size} />
       <Text>{props.text}</Text>
     </Container>

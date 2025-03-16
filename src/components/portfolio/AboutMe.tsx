@@ -76,7 +76,7 @@ const AboutMe = () => {
             ),
           }}
         />
-        <Image src="/images/joel_about_me.webp" />
+        <Image alt="Imagen personal 2" src="/images/joel_about_me.webp" />
       </ContentWrapper>
     </Container>
   );

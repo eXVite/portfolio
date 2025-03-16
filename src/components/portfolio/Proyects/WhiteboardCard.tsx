@@ -52,7 +52,11 @@ const WhiteboardCard = () => {
 
   return (
     <Container>
-      <Image src="/images/proyects/whiteboard.webp" height={"8rem"} />
+      <Image
+        alt="white board project"
+        src="/images/proyects/whiteboard.webp"
+        height={"8rem"}
+      />
       <span>{t("proyects_whiteboard_title", "Realtime project")}</span>
       <ProyectsWrapper>
         <IconWrapper2>

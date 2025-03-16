@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const Title = styled.span`
+export const Title = styled.h1`
   font-size: ${(props) => props.theme.fontSizes.xxl};
   color: ${(props) => props.theme.colors.grey900};
   font-weight: 700;
   line-height: 1;
+  margin: 0;
 
   > span {
     font-size: 40px;

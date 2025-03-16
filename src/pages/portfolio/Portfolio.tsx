@@ -62,9 +62,11 @@ const HorizontalLineWrapper = styled.div`
 const Portfolio = () => {
   return (
     <Container>
-      <HorizontalLineWrapper>
-        <Header />
-      </HorizontalLineWrapper>
+      <header>
+        <HorizontalLineWrapper>
+          <Header />
+        </HorizontalLineWrapper>
+      </header>
       <HorizontalLineWrapper>
         <Hello />
       </HorizontalLineWrapper>
