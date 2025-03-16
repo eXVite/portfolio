@@ -8,11 +8,15 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: calc(100vh - 12.1rem);
-  min-height: 30rem;
   padding-top: 20vh;
   gap: 0.5rem;
   box-sizing: border-box;
   position: relative;
+
+  @media (max-height: 800px) {
+    padding-top: 7rem;
+    height: 37.5rem;
+  }
 `;
 
 const Image = styled.img`
@@ -45,6 +49,7 @@ const PillsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 `;
 
