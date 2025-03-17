@@ -18,5 +18,9 @@ export const useTranslate = () => {
     translations?.toggleLanguage();
   }, [translations]);
 
-  return { t, toggleLanguage };
+  const getLanguage = useCallback(() => {
+    return translations?.language;
+  }, [translations]);
+
+  return { t, toggleLanguage, getLanguage };
 };

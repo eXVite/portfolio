@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useTranslate } from "../../hooks/useTranslate";
+import LanguageToggleButton from "../buttons/LanguageToggleButton";
 
 const Container = styled.div`
   display: flex;
@@ -18,6 +19,10 @@ const HeaderWrapper = styled.div`
   align-items: center;
   box-sizing: border-box;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 24%);
+
+  @media (max-width: 500px) {
+    gap: 1rem;
+  }
 `;
 
 const HeaderItem = styled.a`
@@ -30,7 +35,6 @@ const HeaderItem = styled.a`
 const Header = () => {
   const { t } = useTranslate();
   const ITEMS = [
-    { name: t("header_inicio", "Inicio"), href: "Inicio" },
     { name: t("header_demos", "Demos"), href: "Demos" },
     { name: t("header_experiencia", "Experiencia"), href: "Experiencia" },
     { name: t("header_sobre_mi", "Sobre mi"), href: "Sobremi" },
@@ -44,6 +48,9 @@ const Header = () => {
             {item.name}
           </HeaderItem>
         ))}
+        <HeaderItem>
+          <LanguageToggleButton />
+        </HeaderItem>
       </HeaderWrapper>
     </Container>
   );

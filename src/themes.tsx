@@ -14,6 +14,8 @@ const LightTheme = {
     grey900: "#3D3E3F",
     grey600: "#6C757D",
     grey500: "#8B8B8B",
+    grey200: "#bfbfbf",
+    grey100: "#e5e5e5",
   },
   fontSizes: {
     xxs: "0.625rem",
