@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslate } from "./useTranslate";
 
 interface ExperienceDataType {
@@ -13,8 +13,8 @@ const useExperienceData = () => {
     []
   );
 
-  const getExperienceData = useCallback(() => {
-    return [
+  useEffect(() => {
+    setExperienceData([
       {
         Title: "Full Stack Developer",
         SubTitle: "Tus Media",
@@ -69,12 +69,8 @@ const useExperienceData = () => {
           "Ciclo Formativo De Grado Superior de desarrollo de aplicaciones multiplataforma."
         ),
       },
-    ] as ExperienceDataType[];
-  }, [t]);
-
-  useEffect(() => {
-    setExperienceData(getExperienceData());
-  }, [t, toggleLanguage, getExperienceData]);
+    ]);
+  }, [t, setExperienceData, toggleLanguage]);
 
   return { experienceData };
 };

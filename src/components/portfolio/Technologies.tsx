@@ -23,7 +23,7 @@ const Box = styled.div`
   ${(props) => `border-right: 1px solid ${props.theme.colors.grey500}`}
 `;
 
-const BoxGroup = styled.div<{ left?: boolean }>`
+const BoxGroup = styled.div<{ left: boolean }>`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
