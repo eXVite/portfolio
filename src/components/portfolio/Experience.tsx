@@ -12,7 +12,8 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 666px) {
-    padding: 2rem 0rem;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
   }
 `;
 
@@ -29,32 +30,25 @@ const TimeLineContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  @media (max-width: 666px) {
-    justify-content: center;
-    align-items: center;
-  }
+  align-items: start;
 `;
 
 const TimeLineItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 7rem;
-  gap: 5rem;
+  min-height: 8rem;
+  height: 100%;
+  gap: 2rem;
 
-  @media (max-width: 1100px) {
-    gap: 3rem;
-  }
   @media (max-width: 1100px) {
     gap: 1rem;
   }
 
   @media (max-width: 870px) {
-    min-height: 10rem;
+    min-height: 12rem;
   }
   @media (max-width: 800px) {
-    justify-content: left;
   }
 `;
 
@@ -62,10 +56,15 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  justify-content: center;
-  align-items: start;
-  width: 13rem;
-  flex: none;
+  width: 100%;
+  padding: 1rem;
+  width: 47rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 24%);
+
+  @media (max-width: 1422px) {
+    width: 100%;
+  }
 `;
 
 const InfoTitle = styled.span<{ color: string }>`
@@ -95,7 +94,7 @@ const TimeLineComponent = styled.div<{ type: TimeLineComponentType }>`
   width: 1.625rem;
   flex: none;
   height: 100%;
-  min-height: 7rem;
+  min-height: 10rem;
 
   border-radius: ${(props) =>
     props.type === TimeLineComponentType.Top
@@ -105,7 +104,7 @@ const TimeLineComponent = styled.div<{ type: TimeLineComponentType }>`
       : 0};
 
   @media (max-width: 870px) {
-    min-height: 10rem;
+    min-height: 13rem;
   }
 `;
 
@@ -125,10 +124,6 @@ const DescSpan = styled.span`
     font-weight: 700;
     color: ${(props) => props.theme.colors.secondary500};
   }
-
-  @media (max-width: 800px) {
-    display: none;
-  }
 `;
 
 const Experience = () => {
@@ -147,16 +142,7 @@ const Experience = () => {
       </TitleContainer>
       <TimeLineContainer>
         {experienceData.map((dataItem, index) => (
-          <TimeLineItem key={dataItem.Title}>
-            <InfoWrapper>
-              <InfoTitle color={theme.colors.primary500}>
-                {dataItem.Title}
-              </InfoTitle>
-              <InfoTitle color={theme.colors.baseText}>
-                {dataItem.SubTitle}
-              </InfoTitle>
-              <DateSpan>{dataItem.Date}</DateSpan>
-            </InfoWrapper>
+          <TimeLineItem key={dataItem.Description}>
             <TimeLineComponent
               type={
                 index == 0
@@ -168,11 +154,20 @@ const Experience = () => {
             >
               <TimeLineDot />
             </TimeLineComponent>
-            <DescSpan
-              dangerouslySetInnerHTML={{
-                __html: dataItem.Description,
-              }}
-            />
+            <InfoWrapper>
+              <InfoTitle color={theme.colors.primary500}>
+                {dataItem.Title}
+              </InfoTitle>
+              <InfoTitle color={theme.colors.baseText}>
+                {dataItem.SubTitle}
+              </InfoTitle>
+              <DateSpan>{dataItem.Date}</DateSpan>
+              <DescSpan
+                dangerouslySetInnerHTML={{
+                  __html: dataItem.Description,
+                }}
+              />
+            </InfoWrapper>
           </TimeLineItem>
         ))}
       </TimeLineContainer>
