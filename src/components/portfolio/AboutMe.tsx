@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     padding: 2rem 3rem;
   }
 `;
@@ -16,7 +16,7 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   width: 100%;
   display: flex;
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     justify-content: center;
     align-items: center;
   }
@@ -26,7 +26,7 @@ const ContentWrapper = styled.div`
   display: flex;
   gap: 3rem;
 
-  @media (max-width: 1505px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;

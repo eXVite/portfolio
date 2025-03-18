@@ -17,7 +17,7 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   max-width: 11rem;
   display: flex;
-  @media (max-width: 1250px) {
+  @media (max-width: 1200px) {
     max-width: fit-content;
   }
 `;
@@ -34,6 +34,9 @@ const TitleDescContainer = styled.div`
     flex-direction: column;
 
     gap: 1rem;
+  }
+
+  @media (max-width: 800px) {
     padding: 0 3.5rem;
   }
 `;

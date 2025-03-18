@@ -20,18 +20,11 @@ const HorizontalLineWrapper = styled.div`
   align-items: center;
 
   > div {
-    width: 80rem;
+    width: 70rem;
     box-sizing: border-box;
     border: 1px solid ${(props) => props.theme.colors.grey500};
     border-top: none;
     border-bottom: none;
-  }
-
-  @media (max-width: 1600px) {
-    > div {
-      width: 100%;
-      margin: 0 10rem;
-    }
   }
 
   @media (max-width: 1200px) {
