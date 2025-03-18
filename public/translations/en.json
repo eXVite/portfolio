@@ -11,11 +11,11 @@
   { "key": "header_demos", "value": "Demos" },
   { "key": "header_experiencia", "value": "Experience" },
   { "key": "header_sobre_mi", "value": "About me" },
-  { "key": "hello_title", "value": "Hello, <b>I'm Joel</b>" },
+  { "key": "hello_title", "value": "Hello, <span>I'm Joel</span>" },
   {
     "key": "hello_desc",
     "value": [
-      "+4 years of experience in <span>web</span> development. Specialized in powerful and scalable web applications. 🚀"
+      "<span>+4 years of experience in web development.</span> Specialized in powerful and scalable web applications. 🚀"
     ]
   },
   { "key": "proyects_fit_title", "value": "Fit planner" },

@@ -3,6 +3,7 @@ import { useTranslate } from "../../hooks/useTranslate";
 import Pill from "../pill/Pill";
 import Icon from "../icon/Icon";
 import { useContext } from "react";
+import { Title } from "./CommonSC";
 
 const Container = styled.div`
   display: flex;
@@ -27,16 +28,16 @@ const Image = styled.img`
   border-radius: 6rem;
 `;
 
-const Title = styled.span`
-  font-size: ${(props) => props.theme.fontSizes.xl};
-  font-weight: 1000;
-  color: ${(props) => props.theme.colors.lightText};
+// const Title = styled.span`
+//   font-size: ${(props) => props.theme.fontSizes.xl};
+//   font-weight: 1000;
+//   color: ${(props) => props.theme.colors.lightText};
 
-  b {
-    font-weight: 1000;
-    color: ${(props) => props.theme.colors.primary500};
-  }
-`;
+//   b {
+//     font-weight: 1000;
+//     color: ${(props) => props.theme.colors.primary500};
+//   }
+// `;
 
 const Desc = styled.span`
   font-size: ${(props) => props.theme.fontSizes.m};
@@ -45,7 +46,8 @@ const Desc = styled.span`
   color: ${(props) => props.theme.colors.lightText};
 
   span {
-    color: ${(props) => props.theme.colors.secondary500};
+    color: ${(props) => props.theme.colors.primary400};
+    font-weight: 700;
   }
 `;
 
@@ -82,15 +84,16 @@ const Hello = () => {
     <Container id="Inicio">
       <Image alt="Imagen personal" src="/images/joel_hello.webp" />
       <Title
+        light={true}
         dangerouslySetInnerHTML={{
-          __html: t("hello_title", "Hola, <b>soy Joel</b>"),
+          __html: t("hello_title", "Hola, <span>soy Joel</span>"),
         }}
       />
       <Desc
         dangerouslySetInnerHTML={{
           __html: t(
             "hello_desc",
-            "+4 años de experiencia en <span>desarrollo</span> web. Especializado en aplicaciones web potentes y escalables. 🚀"
+            "<span>+4 años de experiencia en desarrollo</span> web. Especializado en aplicaciones web potentes y escalables. 🚀"
           ),
         }}
       />

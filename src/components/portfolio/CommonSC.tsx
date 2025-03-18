@@ -25,7 +25,11 @@ export const Description = styled.span<{ light?: boolean }>`
 
   > span {
     font-size: ${(props) => props.theme.fontSizes.m};
-    color: ${(props) => props.theme.colors.secondary500};
+    color: ${(props) =>
+      props.light
+        ? props.theme.colors.primary400
+        : props.theme.colors.primary500};
+    font-weight: 700;
   }
 
   > b {
