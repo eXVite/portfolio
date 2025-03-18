@@ -47,7 +47,7 @@ const DescSpan = styled.span`
 
   > span {
     font-weight: 700;
-    color: ${(props) => props.theme.colors.secondary500};
+    color: ${(props) => props.theme.colors.primary500};
   }
 
   @media (max-width: 1300px) {

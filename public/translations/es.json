@@ -14,11 +14,11 @@
   { "key": "header_demos", "value": "Demos" },
   { "key": "header_experiencia", "value": "Experiencia" },
   { "key": "header_sobre_mi", "value": "Sobre mí" },
-  { "key": "hello_title", "value": "Hola, <b>soy Joel</b>" },
+  { "key": "hello_title", "value": "Hola, <span>soy Joel</span>" },
   {
     "key": "hello_desc",
     "value": [
-      "+4 años de experiencia en <span>desarrollo</span> web. Especializado en aplicaciones web potentes y escalables. 🚀"
+      "<span>+4 años de experiencia en desarrollo web.</span> Especializado en aplicaciones web potentes y escalables. 🚀"
     ]
   },
   { "key": "proyects_fit_title", "value": "Fit planner" },
