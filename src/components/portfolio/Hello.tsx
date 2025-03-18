@@ -1,7 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, ThemeContext } from "styled-components";
 import { useTranslate } from "../../hooks/useTranslate";
 import Pill from "../pill/Pill";
 import Icon from "../icon/Icon";
+import { useContext } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ const Image = styled.img`
 const Title = styled.span`
   font-size: ${(props) => props.theme.fontSizes.xl};
   font-weight: 1000;
+  color: ${(props) => props.theme.colors.lightText};
 
   b {
     font-weight: 1000;
@@ -40,6 +42,8 @@ const Desc = styled.span`
   font-size: ${(props) => props.theme.fontSizes.m};
   max-width: 20rem;
   text-align: center;
+  color: ${(props) => props.theme.colors.lightText};
+
   span {
     color: ${(props) => props.theme.colors.secondary500};
   }
@@ -72,6 +76,7 @@ const BottomArrowContainer = styled.div`
 
 const Hello = () => {
   const { t } = useTranslate();
+  const theme = useContext(ThemeContext)!;
 
   return (
     <Container id="Inicio">
@@ -110,8 +115,8 @@ const Hello = () => {
         />
       </PillsContainer>
       <BottomArrowContainer>
-        <Icon icon="demos" />
-        <Icon icon="arrow" />
+        <Icon color={theme.colors.white} icon="demos" />
+        <Icon color={theme.colors.white} icon="arrow" />
       </BottomArrowContainer>
     </Container>
   );

@@ -18,7 +18,7 @@ const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  box-shadow: 0 0 7px 0 rgb(0 0 0 / 24%);
+  box-shadow: 0 0 7px 0 rgb(255 255 255 / 85%);
 
   @media (max-width: 500px) {
     gap: 1rem;

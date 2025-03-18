@@ -1,9 +1,11 @@
 const LightTheme = {
   backgroundColors: {
     baseBackGround: "#F6F6F6",
+    darkBackGround: "#3d3d3d",
   },
   colors: {
     baseText: "#3F454A",
+    lightText: "#f2f2f2",
     white: "#FFFF",
     primary500: "#0D6EFD",
     primary400: "#6FA9FF",
@@ -16,6 +18,7 @@ const LightTheme = {
     grey500: "#8B8B8B",
     grey200: "#bfbfbf",
     grey100: "#e5e5e5",
+    black: "#000000",
   },
   fontSizes: {
     xxs: "0.625rem",

@@ -12,9 +12,15 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const HorizontalLineWrapper = styled.div`
+const HorizontalLineWrapper = styled.div<{ dark?: boolean }>`
   width: 100%;
-  border-bottom: 1px solid ${(props) => props.theme.colors.grey500};
+  border-bottom: 1px solid
+    ${(props) =>
+      props.dark ? props.theme.colors.black : props.theme.colors.grey500};
+  background-color: ${(props) =>
+    props.dark
+      ? props.theme.backgroundColors.darkBackGround
+      : props.theme.backgroundColors.baseBackGround};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +28,9 @@ const HorizontalLineWrapper = styled.div`
   > div {
     width: 70rem;
     box-sizing: border-box;
-    border: 1px solid ${(props) => props.theme.colors.grey500};
+    border: 1px solid
+      ${(props) =>
+        props.dark ? props.theme.colors.black : props.theme.colors.grey500};
     border-top: none;
     border-bottom: none;
   }
@@ -56,11 +64,11 @@ const Portfolio = () => {
   return (
     <Container>
       <header>
-        <HorizontalLineWrapper>
+        <HorizontalLineWrapper dark={true}>
           <Header />
         </HorizontalLineWrapper>
       </header>
-      <HorizontalLineWrapper>
+      <HorizontalLineWrapper dark={true}>
         <Hello />
       </HorizontalLineWrapper>
       <HorizontalLineWrapper>
@@ -75,7 +83,7 @@ const Portfolio = () => {
       <HorizontalLineWrapper>
         <AboutMe />
       </HorizontalLineWrapper>
-      <HorizontalLineWrapper>
+      <HorizontalLineWrapper dark={true}>
         <Header />
       </HorizontalLineWrapper>
     </Container>

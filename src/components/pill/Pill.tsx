@@ -31,7 +31,7 @@ const Text = styled.span`
   max-width: 20rem;
   text-align: center;
   font-weight: 600;
-  color: ${(props) => props.theme.colors.grey600};
+  color: ${(props) => props.theme.colors.lightText};
   span {
     color: ${(props) => props.theme.colors.secondary};
   }
@@ -56,7 +56,7 @@ const Pill = (props: PillProps) => {
 
   return (
     <Container onClick={redirect}>
-      <Icon icon={props.icon} color={theme.colors.grey700} size={props.size} />
+      <Icon icon={props.icon} color={theme.colors.white} size={props.size} />
       <Text>{props.text}</Text>
     </Container>
   );
