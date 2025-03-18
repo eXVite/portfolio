@@ -62,7 +62,7 @@ const InfoWrapper = styled.div`
   border-radius: 1rem;
   box-shadow: 0 0 7px 0 rgb(0 0 0 / 24%);
 
-  @media (max-width: 1422px) {
+  @media (max-width: 1200px) {
     width: 100%;
   }
 `;

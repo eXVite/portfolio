@@ -19,6 +19,10 @@ const Container = styled.div`
     rgba(13, 207, 253, 0.19663280229476487) 80%
   );
   cursor: pointer;
+
+  @media (max-width: 500px) {
+    height: 2rem;
+  }
 `;
 
 const Text = styled.span`
@@ -30,6 +34,9 @@ const Text = styled.span`
   color: ${(props) => props.theme.colors.grey600};
   span {
     color: ${(props) => props.theme.colors.secondary};
+  }
+  @media (max-width: 500px) {
+    font-size: ${(props) => props.theme.fontSizes.xs};
   }
 `;
 

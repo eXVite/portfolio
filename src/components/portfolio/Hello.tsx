@@ -51,6 +51,7 @@ const PillsContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 0 3.5rem;
 `;
 
 const bubbleFloat = keyframes`
