@@ -23,6 +23,11 @@ const HeaderWrapper = styled.div`
   @media (max-width: 500px) {
     gap: 1rem;
   }
+
+  @media (max-width: 375px) {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
 `;
 
 const HeaderItem = styled.a`

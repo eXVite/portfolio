@@ -46,6 +46,10 @@ const ContactButton = styled.div`
   &:hover {
     background-color: ${(props) => props.theme.colors.primary600};
   }
+
+  @media (max-width: 500px) {
+    padding: 0 1rem;
+  }
 `;
 
 const CallToAction = () => {

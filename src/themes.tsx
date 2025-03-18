@@ -1,13 +1,13 @@
 const LightTheme = {
   backgroundColors: {
     baseBackGround: "#F6F6F6",
-    darkBackGround: "#3d3d3d",
+    darkBackGround: "#393f45",
   },
   colors: {
     baseText: "#3F454A",
     lightText: "#f2f2f2",
     white: "#FFFF",
-    primary600: "#0064f9",
+    primary600: "#24292f",
     primary500: "#0062f5",
     primary400: "#6FA9FF",
     primary200: "#C3DCFF",
