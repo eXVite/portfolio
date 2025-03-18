@@ -52,7 +52,7 @@ const ProyectsContainer = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 660px) {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 `;
 
