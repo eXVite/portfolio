@@ -7,6 +7,7 @@ const LightTheme = {
     baseText: "#3F454A",
     lightText: "#f2f2f2",
     white: "#FFFF",
+    primary600: "#0064f9",
     primary500: "#0D6EFD",
     primary400: "#6FA9FF",
     primary200: "#C3DCFF",

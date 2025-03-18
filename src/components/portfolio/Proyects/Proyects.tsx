@@ -115,6 +115,9 @@ const OpenButton = styled.div`
     font-weight: 600;
     line-height: 1;
   }
+  &:hover {
+    background-color: ${(props) => props.theme.colors.primary600};
+  }
 `;
 
 const Proyects = () => {
