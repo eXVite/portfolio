@@ -51,6 +51,10 @@ const ContactButton = styled.div`
 const CallToAction = () => {
   const { t } = useTranslate();
 
+  const handleContact = () => {
+    window.open("mailto:joeliglesiasjimenez@gmail.com", "_blank");
+  };
+
   return (
     <Container>
       <DataContainer>
@@ -70,7 +74,7 @@ const CallToAction = () => {
           }}
         />
       </DataContainer>
-      <ContactButton>
+      <ContactButton onClick={handleContact}>
         <span>{t("cta_button", "¡Contáctame! 📩🚀")}</span>
       </ContactButton>
     </Container>
