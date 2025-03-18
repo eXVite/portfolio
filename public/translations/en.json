@@ -63,5 +63,19 @@
     "value": [
       "Higher Technical Degree in multi-platform application development."
     ]
+  },
+  {
+    "key": "cta_title",
+    "value": ["Do you have an idea? <span>Let's talk.</span>"]
+  },
+  {
+    "key": "cta_desc",
+    "value": [
+      "Do you have a project in mind? 🚀 Did you like what you saw? 💡<br/> Contact me with no obligation, and let's make it happen! ✨"
+    ]
+  },
+  {
+    "key": "cta_button",
+    "value": ["Contact me! 📩🚀"]
   }
 ]
