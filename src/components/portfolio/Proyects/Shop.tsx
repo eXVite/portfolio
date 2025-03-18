@@ -49,10 +49,10 @@ const ShopCard = () => {
       <span>{t("proyects_fit_title", "Shop schema")}</span>
       <ProyectsWrapper>
         <IconWrapper2>
-          <Icon icon="react" size="1.5rem" />
+          <Icon icon="react" size="1.5rem" color={"black"} />
         </IconWrapper2>
         <IconWrapper2>
-          <Icon icon="net" size="1.5rem" />
+          <Icon icon="net" size="1.5rem" color={"black"} />
         </IconWrapper2>
       </ProyectsWrapper>
     </Container>

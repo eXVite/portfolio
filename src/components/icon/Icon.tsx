@@ -12,10 +12,10 @@ const Container = styled.div<{ size?: string; color?: string }>`
     height: ${(props) => props.size};
     width: ${(props) => props.size};
     g {
-      fill: ${(props) => props.color};
+      fill: ${(props) => props.color}!important;
     }
     path {
-      fill: ${(props) => props.color};
+      fill: ${(props) => props.color}!important;
     }
   }
 `;

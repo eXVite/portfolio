@@ -14,6 +14,7 @@ const LightTheme = {
     primary100: "#A9CCFF",
     primary50: "#dee8f7",
     grey900: "#3D3E3F",
+    grey700: "#454545",
     grey600: "#6C757D",
     grey500: "#8B8B8B",
     grey200: "#bfbfbf",

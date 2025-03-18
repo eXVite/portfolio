@@ -49,13 +49,13 @@ const FitPlannerCard = () => {
       <span>{t("proyects_fit_title", "Fit planner")}</span>
       <ProyectsWrapper>
         <IconWrapper2>
-          <Icon icon="react" size="1.5rem" />
+          <Icon icon="react" size="1.5rem" color={"black"} />
         </IconWrapper2>
         <IconWrapper2>
-          <Icon icon="springboot" size="1.5rem" />
+          <Icon icon="springboot" size="1.5rem" color={"black"} />
         </IconWrapper2>
         <IconWrapper2>
-          <Icon icon="express" size="1.5rem" />
+          <Icon icon="express" size="1.5rem" color={"black"} />
         </IconWrapper2>
       </ProyectsWrapper>
     </Container>

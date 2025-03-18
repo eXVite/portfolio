@@ -60,10 +60,10 @@ const WhiteboardCard = () => {
       <span>{t("proyects_whiteboard_title", "Realtime project")}</span>
       <ProyectsWrapper>
         <IconWrapper2>
-          <Icon icon="react" size="1.5rem" />
+          <Icon icon="react" size="1.5rem" color={"black"} />
         </IconWrapper2>
         <IconWrapper2>
-          <Icon icon="express" size="1.5rem" />
+          <Icon icon="express" size="1.5rem" color={"black"} />
         </IconWrapper2>
       </ProyectsWrapper>
     </Container>
