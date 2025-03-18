@@ -68,5 +68,19 @@
     "value": [
       "Ciclo Formativo de Grado Superior de desarrollo de aplicaciones multiplataforma."
     ]
+  },
+  {
+    "key": "cta_title",
+    "value": ["¿Tienes una idea? <span>Hablemos.</span>"]
+  },
+  {
+    "key": "cta_desc",
+    "value": [
+      "¿Tienes en mente crear algún proyecto? 🚀 ¿Te ha gustado lo que has visto? 💡<br/> ¡Contáctame sin compromiso y hagámoslo realidad! ✨"
+    ]
+  },
+  {
+    "key": "cta_button",
+    "value": ["¡Contáctame! 📩🚀"]
   }
 ]
