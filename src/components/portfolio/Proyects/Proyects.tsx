@@ -3,8 +3,7 @@ import { Description, Title } from "../CommonSC";
 import { useTranslate } from "../../../hooks/useTranslate";
 import Icon from "../../icon/Icon";
 import { useContext } from "react";
-import WhiteboardCard from "./WhiteboardCard";
-import FitPlannerCard from "./ProyectCard";
+import ProyectCard from "./ProyectCard";
 
 const Container = styled.div`
   display: flex;
@@ -123,6 +122,10 @@ const CardWrapper = styled.div`
   height: 9.5rem;
 `;
 
+const BigCardWrapper = styled.div`
+  height: 16rem;
+`;
+
 const Proyects = () => {
   const theme = useContext(ThemeContext)!;
   const { t } = useTranslate();
@@ -151,7 +154,17 @@ const Proyects = () => {
       <ProyectsContainer>
         <ProyectsGrid>
           <LeftColumnGrid>
-            <WhiteboardCard />
+            <BigCardWrapper>
+              <ProyectCard
+                backgroundImage="pizarra.webp"
+                description={t(
+                  "proyects_whiteboard_desc",
+                  "Comparte una pizarra online interactiva con diferentes usuario en tiempo real."
+                )}
+                title={t("proyects_whiteboard_title_", "Pizarra")}
+                icons={["react", "net"]}
+              />
+            </BigCardWrapper>
             <OpenButton>
               <span>{t("proyects_open", "Explora mis proyectos!")}</span>
               <Icon
@@ -163,7 +176,7 @@ const Proyects = () => {
           </LeftColumnGrid>
           <RightColumnGrid>
             <CardWrapper>
-              <FitPlannerCard
+              <ProyectCard
                 backgroundImage="landing.webp"
                 description={t(
                   "proyects_shop_desc",
@@ -174,7 +187,7 @@ const Proyects = () => {
               />
             </CardWrapper>
             <CardWrapper>
-              <FitPlannerCard
+              <ProyectCard
                 backgroundImage="dashboard.webp"
                 description={t(
                   "proyects_fit_desc",

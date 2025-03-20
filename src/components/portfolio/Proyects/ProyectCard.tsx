@@ -96,7 +96,7 @@ interface ProyectCardProps {
   icons: string[];
 }
 
-const FitPlannerCard = (props: ProyectCardProps) => {
+const ProyectCard = (props: ProyectCardProps) => {
   return (
     <Container backgroundImage={props.backgroundImage}>
       <DataContainer className="animationContainer">
@@ -116,4 +116,4 @@ const FitPlannerCard = (props: ProyectCardProps) => {
   );
 };
 
-export default FitPlannerCard;
+export default ProyectCard;
