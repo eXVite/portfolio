@@ -4,8 +4,7 @@ import { useTranslate } from "../../../hooks/useTranslate";
 import Icon from "../../icon/Icon";
 import { useContext } from "react";
 import WhiteboardCard from "./WhiteboardCard";
-import ShopCard from "./Shop";
-import FitPlannerCard from "./FitPlanificationCard";
+import FitPlannerCard from "./ProyectCard";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +16,7 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   max-width: 11rem;
   display: flex;
+
   @media (max-width: 1200px) {
     max-width: fit-content;
   }
@@ -30,9 +30,9 @@ const TitleDescContainer = styled.div`
   display: flex;
   gap: 3rem;
   padding: 0 7rem;
+
   @media (max-width: 1200px) {
     flex-direction: column;
-
     gap: 1rem;
   }
 
@@ -43,8 +43,6 @@ const TitleDescContainer = styled.div`
 
 const ProyectsContainer = styled.div`
   width: 100%;
-  background-size: 25px 25px;
-  background-position: -8.5px -8.5px; /* Ajusta la posición para eliminar bordes */
   padding: 4rem;
   padding-top: 0rem;
   justify-content: center;
@@ -115,9 +113,14 @@ const OpenButton = styled.div`
     font-weight: 600;
     line-height: 1;
   }
+
   &:hover {
     background-color: ${(props) => props.theme.colors.primary600};
   }
+`;
+
+const CardWrapper = styled.div`
+  height: 9.5rem;
 `;
 
 const Proyects = () => {
@@ -159,8 +162,28 @@ const Proyects = () => {
             </OpenButton>
           </LeftColumnGrid>
           <RightColumnGrid>
-            <ShopCard />
-            <FitPlannerCard />
+            <CardWrapper>
+              <FitPlannerCard
+                backgroundImage="landing.webp"
+                description={t(
+                  "proyects_shop_desc",
+                  "Tienda online totalmente funcional."
+                )}
+                title={t("proyects_shop_title", "Shop")}
+                icons={["react", "net"]}
+              />
+            </CardWrapper>
+            <CardWrapper>
+              <FitPlannerCard
+                backgroundImage="dashboard.webp"
+                description={t(
+                  "proyects_fit_desc",
+                  "Planifica tus rutinas y dietas con inteligencia artificial."
+                )}
+                title={t("proyects_fit_title", "Fit planner")}
+                icons={["react", "springboot", "express"]}
+              />
+            </CardWrapper>
           </RightColumnGrid>
         </ProyectsGrid>
       </ProyectsContainer>
