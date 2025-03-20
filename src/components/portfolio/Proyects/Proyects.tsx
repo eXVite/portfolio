@@ -158,10 +158,10 @@ const Proyects = () => {
               <ProyectCard
                 backgroundImage="pizarra.webp"
                 description={t(
-                  "proyects_whiteboard_desc",
+                  "proyects_pizarra_desc",
                   "Comparte una pizarra online interactiva con diferentes usuario en tiempo real."
                 )}
-                title={t("proyects_whiteboard_title_", "Pizarra")}
+                title={t("proyects_pizarra_title_", "Pizarra")}
                 icons={["react", "net"]}
               />
             </BigCardWrapper>

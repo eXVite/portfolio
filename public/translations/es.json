@@ -2,9 +2,7 @@
   { "key": "about_me_title", "value": "Sobre mí<span>.</span>" },
   {
     "key": "about_me_desc",
-    "value": [
-      "¡Hola! 👋 Soy un <span>desarrollador web Full Stack</span> con más de <span>4 años de experiencia profesional</span> en el sector. Me apasiona el mundo del desarrollo y el aprendizaje continuo. Me describiría como alguien enfocado en hacer las cosas bien, siempre buscando la mejor solución para cada proyecto.<br/><br/>📌 Actualmente, estoy dedicando tiempo a <span>mis proyectos personales</span> mientras trabajo, con el objetivo de seguir mejorando en todos los aspectos y ofrecer <span>servicios de mayor calidad</span>.<br/><br/>💻 Tengo experiencia en <span>todo tipo de aplicaciones</span>: desde plataformas online con <span>alto tráfico</span> e <span>interacciones en tiempo real</span>, hasta sistemas de <span>gestión interna</span> para <span>empresas</span>.<br/><br/>🚀 Siempre estoy abierto a <span>nuevos retos</span> y <span>proyectos freelance</span>. Si tienes una <span>idea</span> en mente, <span>¡hablemos!</span>"
-    ]
+    "value": "¡Hola! 👋 Soy un <span>desarrollador web Full Stack</span> con más de <span>4 años de experiencia profesional</span> en el sector. Me apasiona el mundo del desarrollo y el aprendizaje continuo. Me describiría como alguien enfocado en hacer las cosas bien, siempre buscando la mejor solución para cada proyecto.<br/><br/>📌 Actualmente, estoy dedicando tiempo a <span>mis proyectos personales</span> mientras trabajo, con el objetivo de seguir mejorando en todos los aspectos y ofrecer <span>servicios de mayor calidad</span>.<br/><br/>💻 Tengo experiencia en <span>todo tipo de aplicaciones</span>: desde plataformas online con <span>alto tráfico</span> e <span>interacciones en tiempo real</span>, hasta sistemas de <span>gestión interna</span> para <span>empresas</span>.<br/><br/>🚀 Siempre estoy abierto a <span>nuevos retos</span> y <span>proyectos freelance</span>. Si tienes una <span>idea</span> en mente, <span>¡hablemos!</span>"
   },
   {
     "key": "experience_title",
@@ -17,17 +15,13 @@
   { "key": "hello_title", "value": "Hola, <span>soy Joel</span>" },
   {
     "key": "hello_desc",
-    "value": [
-      "<span>+4 años de experiencia en desarrollo web.</span> Especializado en aplicaciones web potentes y escalables. 🚀"
-    ]
+    "value": "<span>+4 años de experiencia en desarrollo web.</span> Especializado en aplicaciones web potentes y escalables. 🚀"
   },
   { "key": "proyects_fit_title", "value": "Fit planner" },
   { "key": "proyects_title", "value": "Expositor de demos<span>.</span>" },
   {
     "key": "proyects_desc",
-    "value": [
-      "He creado un pequeño sitio para exponer algunos <span>proyectos y demos</span> que he desarrollado a lo largo de mi trayectoria profesional, mostrando así una parte de lo que soy capaz de hacer. Como dice el dicho, <b>¡una imagen vale más que mil palabras!</b>"
-    ]
+    "value": "He creado un pequeño sitio para exponer algunos <span>proyectos y demos</span> que he desarrollado a lo largo de mi trayectoria profesional, mostrando así una parte de lo que soy capaz de hacer. Como dice el dicho, <b>¡una imagen vale más que mil palabras!</b>"
   },
   { "key": "proyects_open", "value": "¡Explora mis proyectos!" },
   { "key": "proyects_fit_title", "value": "Shop schema" },
@@ -35,52 +29,53 @@
   { "key": "experience_date_actual", "value": "Actualmente" },
   {
     "key": "experience_desc_tus_media",
-    "value": [
-      "Desarrollo y mantenimiento de una plataforma de un <span>aula virtual</span> con mucho flujo de usuarios, muchas interacciones <span>realtime</span> e integraciones con <span>IA</span>."
-    ]
+    "value": "Desarrollo y mantenimiento de una plataforma de un <span>aula virtual</span> con mucho flujo de usuarios, muchas interacciones <span>realtime</span> e integraciones con <span>IA</span>."
   },
   {
     "key": "experience_desc_nttdata",
-    "value": [
-      "Desarrollo y mantenimiento de varias aplicaciones para clientes como la <span>Generalitat de Catalunya</span>, trato con clientes y responsable del equipo de desarrollo de un aplicativo."
-    ]
+    "value": "Desarrollo y mantenimiento de varias aplicaciones para clientes como la <span>Generalitat de Catalunya</span>, trato con clientes y responsable del equipo de desarrollo de un aplicativo."
   },
   {
     "key": "experience_desc_cescit",
-    "value": [
-      "<span>Contrato en prácticas</span>, desarrollo de una API de gestión de reservas y personal para una barbería, además de la obtención de un certificado de Udemy en <span>Spring Boot</span>."
-    ]
+    "value": "<span>Contrato en prácticas</span>, desarrollo de una API de gestión de reservas y personal para una barbería, además de la obtención de un certificado de Udemy en <span>Spring Boot</span>."
   },
   {
     "key": "experience_desc_ip",
-    "value": [
-      "Ciclo Formativo de Grado Superior de desarrollo de aplicaciones web."
-    ]
+    "value": "Ciclo Formativo de Grado Superior de desarrollo de aplicaciones web."
   },
   {
     "key": "experience_desc_nttdata_2",
-    "value": [
-      "<span>Contrato en prácticas</span>, fueron mis primeros pasos en el mundo profesional del desarrollo, en estos meses me centré en crear unas buenas bases del desarrollo web."
-    ]
+    "value": "<span>Contrato en prácticas</span>, fueron mis primeros pasos en el mundo profesional del desarrollo, en estos meses me centré en crear unas buenas bases del desarrollo web."
   },
   {
     "key": "experience_desc_dam",
-    "value": [
-      "Ciclo Formativo de Grado Superior de desarrollo de aplicaciones multiplataforma."
-    ]
+    "value": "Ciclo Formativo de Grado Superior de desarrollo de aplicaciones multiplataforma."
   },
   {
     "key": "cta_title",
-    "value": ["¿Tienes una idea? <span>Hablemos.</span>"]
+    "value": "¿Tienes una idea? <span>Hablemos.</span>"
   },
   {
     "key": "cta_desc",
-    "value": [
-      "¿Tienes en mente crear algún proyecto? 🚀 ¿Te ha gustado lo que has visto? 💡<br/> ¡Contáctame sin compromiso y hagámoslo realidad! ✨"
-    ]
+    "value": "¿Tienes en mente crear algún proyecto? 🚀 ¿Te ha gustado lo que has visto? 💡<br/> ¡Contáctame sin compromiso y hagámoslo realidad! ✨"
   },
   {
     "key": "cta_button",
-    "value": ["¡Contáctame! 📩🚀"]
-  }
+    "value": "¡Contáctame! 📩🚀"
+  },
+  {
+    "key": "proyects_pizarra_desc",
+    "value": "Comparte una pizarra online interactiva con diferentes usuarios en tiempo real."
+  },
+  { "key": "proyects_pizarra_title_", "value": "Pizarra" },
+  {
+    "key": "proyects_shop_desc",
+    "value": "Tienda online totalmente funcional."
+  },
+  { "key": "proyects_shop_title", "value": "Shop" },
+  {
+    "key": "proyects_fit_desc",
+    "value": "Planifica tus rutinas y dietas con inteligencia artificial."
+  },
+  { "key": "proyects_fit_title", "value": "Fit planner" }
 ]

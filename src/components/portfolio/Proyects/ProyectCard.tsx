@@ -13,7 +13,7 @@ const Container = styled.div<{ backgroundImage: string }>`
   border: 1px solid ${(props) => props.theme.colors.baseText};
   cursor: pointer;
   background-image: ${(props) =>
-    `url("/public/images/proyects/${props.backgroundImage}")`};
+    `url("/images/proyects/${props.backgroundImage}")`};
   background-position: center;
   background-size: cover;
   @media (max-width: 1045px) {
@@ -26,7 +26,7 @@ const ContentWrapper = styled.div`
   height: 100%;
   width: 100%;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
   box-sizing: border-box;
@@ -54,6 +54,7 @@ const DataContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   gap: 1rem;
   background-color: rgba(0, 0, 0, 0.371);
@@ -100,10 +101,11 @@ const ProyectCard = (props: ProyectCardProps) => {
   return (
     <Container backgroundImage={props.backgroundImage}>
       <DataContainer className="animationContainer">
-        <Title>{props.title}</Title>
         <Desc>{props.description}</Desc>
       </DataContainer>
       <ContentWrapper>
+        <Title>{props.title}</Title>
+
         <ProyectsWrapper>
           {props.icons.map((icon) => (
             <IconWrapper>
