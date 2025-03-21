@@ -40,7 +40,7 @@ const HeaderItem = styled.a`
 const Header = () => {
   const { t } = useTranslate();
   const ITEMS = [
-    { name: t("header_demos", "Demos"), href: "Demos" },
+    { name: t("header_demos", "Demoos"), href: "Demos" },
     { name: t("header_experiencia", "Experiencia"), href: "Experiencia" },
     { name: t("header_sobre_mi", "Sobre mi"), href: "Sobremi" },
   ];
