@@ -7,6 +7,8 @@ import { ThemeProvider } from "styled-components";
 import theme from "./themes";
 import { LanguageProvider } from "./contexts/TranslationContext";
 
+// WELCOME TO MY PORTFOLIO
+
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
