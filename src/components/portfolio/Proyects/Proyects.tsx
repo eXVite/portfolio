@@ -1,8 +1,6 @@
-import styled, { ThemeContext } from "styled-components";
+import styled from "styled-components";
 import { Description, Title } from "../CommonSC";
 import { useTranslate } from "../../../hooks/useTranslate";
-import Icon from "../../icon/Icon";
-import { useContext } from "react";
 import ProyectCard from "./ProyectCard";
 
 const Container = styled.div`
@@ -40,94 +38,22 @@ const TitleDescContainer = styled.div`
   }
 `;
 
-const ProyectsContainer = styled.div`
-  width: 100%;
-  padding: 4rem;
-  padding-top: 0rem;
-  justify-content: center;
-  box-sizing: border-box;
+const ProyectsRow = styled.div`
   display: flex;
-  align-items: center;
+  gap: 1.25rem;
+  padding: 0 7rem 3rem;
+
+  @media (max-width: 800px) {
+    padding: 0 3.5rem 2rem;
+  }
+
   @media (max-width: 660px) {
-    padding: 2rem 1rem;
+    flex-direction: column;
+    padding: 0 1.5rem 2rem;
   }
-`;
-
-const ProyectsGrid = styled.div`
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  width: 46rem;
-  height: 20rem;
-  box-sizing: border-box;
-
-  @media (max-width: 1045px) {
-    flex-direction: column-reverse;
-    height: min-content;
-    width: 20rem;
-  }
-`;
-
-const LeftColumnGrid = styled.div`
-  width: 35rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  @media (max-width: 1045px) {
-    width: 20rem;
-  }
-`;
-
-const RightColumnGrid = styled.div`
-  width: 25rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  @media (max-width: 1045px) {
-    width: 20rem;
-  }
-`;
-
-const OpenButton = styled.div`
-  width: 100%;
-  background-color: ${(props) => props.theme.colors.primary500};
-  border-radius: 0.5rem;
-  border: none;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  padding: 0 0.5rem;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  > span {
-    font-size: ${(props) => props.theme.fontSizes.l};
-    color: ${(props) => props.theme.colors.white};
-    font-weight: 600;
-    line-height: 1;
-  }
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.primary600};
-  }
-`;
-
-const CardWrapper = styled.div`
-  height: 9.5rem;
-`;
-
-const BigCardWrapper = styled.div`
-  height: 16rem;
 `;
 
 const Proyects = () => {
-  const theme = useContext(ThemeContext)!;
   const { t } = useTranslate();
 
   return (
@@ -136,7 +62,7 @@ const Proyects = () => {
         <TitleContainer>
           <Title
             dangerouslySetInnerHTML={{
-              __html: t("proyects_title", "Expositor de demos<span>.</span>"),
+              __html: t("proyects_title", "Mis proyectos<span>.</span>"),
             }}
           />
         </TitleContainer>
@@ -145,61 +71,47 @@ const Proyects = () => {
             dangerouslySetInnerHTML={{
               __html: t(
                 "proyects_desc",
-                "He creado un pequeño sitio para exponer algunos <span>proyectos y demos</span> que he desarrollado a lo largo de mi trayectoria profesional,  mostrando así una parte de lo que soy capaz de hacer. Como dice el dicho, <b>¡una imagen vale más que mil palabras!</b>"
+                "Aquí tienes un vistazo a algunos <span>proyectos reales</span> en los que he trabajado. Desde inteligencia artificial aplicada hasta apps móviles, <b>cada uno refleja mi forma de resolver problemas.</b>"
               ),
             }}
           />
         </DescContainer>
       </TitleDescContainer>
-      <ProyectsContainer>
-        <ProyectsGrid>
-          <LeftColumnGrid>
-            <BigCardWrapper>
-              <ProyectCard
-                backgroundImage="pizarra.webp"
-                description={t(
-                  "proyects_pizarra_desc",
-                  "Comparte una pizarra online interactiva con diferentes usuario en tiempo real."
-                )}
-                title={t("proyects_pizarra_title_", "Pizarra")}
-                icons={["react", "net"]}
-              />
-            </BigCardWrapper>
-            <OpenButton>
-              <span>{t("proyects_open", "Explora mis proyectos!")}</span>
-              <Icon
-                icon="new-window"
-                size="1.5rem"
-                color={theme.colors.white}
-              />
-            </OpenButton>
-          </LeftColumnGrid>
-          <RightColumnGrid>
-            <CardWrapper>
-              <ProyectCard
-                backgroundImage="landing.webp"
-                description={t(
-                  "proyects_shop_desc",
-                  "Tienda online totalmente funcional."
-                )}
-                title={t("proyects_shop_title", "Shop")}
-                icons={["react", "net"]}
-              />
-            </CardWrapper>
-            <CardWrapper>
-              <ProyectCard
-                backgroundImage="dashboard.webp"
-                description={t(
-                  "proyects_fit_desc",
-                  "Planifica tus rutinas y dietas con inteligencia artificial."
-                )}
-                title={t("proyects_fit_title", "Fit planner")}
-                icons={["react", "springboot", "express"]}
-              />
-            </CardWrapper>
-          </RightColumnGrid>
-        </ProyectsGrid>
-      </ProyectsContainer>
+      <ProyectsRow>
+        <ProyectCard
+          backgroundImage="nutriai_card.webp"
+          description={t(
+            "proyects_nutri_desc",
+            "Portal web que genera dietas alimenticias personalizadas con inteligencia artificial y te permite guardarlas para seguir tu plan nutricional."
+          )}
+          title={t("proyects_nutri_title", "NutriAI")}
+          icons={["react", "express", "aws", "net"]}
+          status="live"
+          statusLabel={t("proyects_status_live", "Online")}
+        />
+        <ProyectCard
+          backgroundImage="balance_card.webp"
+          description={t(
+            "proyects_balance_desc",
+            "Aplicación web para llevar tus cuentas anuales, controlar ingresos y gastos y realizar simulaciones financieras."
+          )}
+          title={t("proyects_balance_title", "Yearly Balance")}
+          icons={["react", "express", "aws"]}
+          status="live"
+          statusLabel={t("proyects_status_live", "Online")}
+        />
+        <ProyectCard
+          backgroundImage="calendar_card.webp"
+          description={t(
+            "proyects_calendar_desc",
+            "App móvil minimalista tipo calendario para apuntar y gestionar tareas de forma simple e intuitiva."
+          )}
+          title={t("proyects_calendar_title", "Calendario")}
+          icons={["react"]}
+          status="dev"
+          statusLabel={t("proyects_status_dev", "En desarrollo")}
+        />
+      </ProyectsRow>
     </Container>
   );
 };

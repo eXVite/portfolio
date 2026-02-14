@@ -1,29 +1,84 @@
 [
-  { "key": "about_me_title", "value": "About me<span>.</span>" },
+  {
+    "key": "about_me_title",
+    "value": "About me<span>.</span>"
+  },
   {
     "key": "about_me_desc",
     "value": "Hello! 👋 I am a <span>Full Stack web developer</span> with more than <span>4 years of professional experience</span> in the field. I am passionate about the world of development and continuous learning. I would describe myself as someone focused on doing things right, always seeking the best solution for each project.<br/><br/>📌 Currently, I am dedicating time to <span>my personal projects</span> while working, aiming to keep improving in all aspects and offer <span>higher quality services</span>.<br/><br/>💻 I have experience in <span>all kinds of applications</span>: from online platforms with <span>high traffic</span> and <span>real-time interactions</span>, to <span>internal management systems</span> for <span>businesses</span>.<br/><br/>🚀 I am always open to <span>new challenges</span> and <span>freelance projects</span>. If you have an <span>idea</span> in mind, <span>let's talk!</span>"
   },
-  { "key": "experience_title", "value": "Work experience<span>.</span>" },
-  { "key": "header_inicio", "value": "Home" },
-  { "key": "header_demos", "value": "Demos" },
-  { "key": "header_experiencia", "value": "Experience" },
-  { "key": "header_sobre_mi", "value": "About me" },
-  { "key": "hello_title", "value": "Hello, <span>I'm Joel</span>" },
+  {
+    "key": "experience_title",
+    "value": "Work experience<span>.</span>"
+  },
+  {
+    "key": "header_inicio",
+    "value": "Home"
+  },
+  {
+    "key": "header_demos",
+    "value": "Demos"
+  },
+  {
+    "key": "header_experiencia",
+    "value": "Experience"
+  },
+  {
+    "key": "header_sobre_mi",
+    "value": "About me"
+  },
+  {
+    "key": "hello_title",
+    "value": "Hello, <span>I'm Joel</span>"
+  },
   {
     "key": "hello_desc",
     "value": "<span>+4 years of experience in web development.</span> Specialized in powerful and scalable web applications. 🚀"
   },
-  { "key": "proyects_fit_title", "value": "Fit planner" },
-  { "key": "proyects_title", "value": "Demo exhibitor<span>.</span>" },
+  {
+    "key": "proyects_title",
+    "value": "My projects<span>.</span>"
+  },
   {
     "key": "proyects_desc",
-    "value": "I created a small site to showcase some <span>projects and demos</span> that I have developed throughout my professional journey, thus showing a part of what I am capable of doing. As the saying goes, <b>an image is worth a thousand words!</b>"
+    "value": "Here's a glimpse at some <span>real projects</span> I've worked on. From applied artificial intelligence to mobile apps, <b>each one reflects my way of solving problems.</b>"
   },
-  { "key": "proyects_open", "value": "Explore my projects!" },
-  { "key": "proyects_fit_title", "value": "Shop schema" },
-  { "key": "proyects_whiteboard_title", "value": "Realtime project" },
-  { "key": "experience_date_actual", "value": "Currently" },
+  {
+    "key": "proyects_nutri_title",
+    "value": "NutriAI"
+  },
+  {
+    "key": "proyects_nutri_desc",
+    "value": "Web portal that generates personalized dietary plans with artificial intelligence and lets you save them to follow your nutrition plan."
+  },
+  {
+    "key": "proyects_balance_title",
+    "value": "Balance Year"
+  },
+  {
+    "key": "proyects_balance_desc",
+    "value": "Web application to manage your annual accounts, track income and expenses, and run financial simulations."
+  },
+  {
+    "key": "proyects_calendar_title",
+    "value": "Calendar"
+  },
+  {
+    "key": "proyects_calendar_desc",
+    "value": "Minimalist mobile calendar app for jotting down and managing tasks in a simple and intuitive way."
+  },
+  {
+    "key": "proyects_status_live",
+    "value": "Online"
+  },
+  {
+    "key": "proyects_status_dev",
+    "value": "In development"
+  },
+  {
+    "key": "experience_date_actual",
+    "value": "Currently"
+  },
   {
     "key": "experience_desc_tus_media",
     "value": "Development and maintenance of a platform for a <span>virtual classroom</span> with a lot of user traffic, many <span>realtime</span> interactions, and integrations with <span>AI</span>."
@@ -59,20 +114,5 @@
   {
     "key": "cta_button",
     "value": "Contact me! 📩🚀"
-  },
-  {
-    "key": "proyects_pizarra_desc",
-    "value": "Share an interactive online whiteboard with different users in real-time."
-  },
-  { "key": "proyects_pizarra_title_", "value": "Whiteboard" },
-  {
-    "key": "proyects_shop_desc",
-    "value": "Fully functional online store."
-  },
-  { "key": "proyects_shop_title", "value": "Shop" },
-  {
-    "key": "proyects_fit_desc",
-    "value": "Plan your workouts and diets with artificial intelligence."
-  },
-  { "key": "proyects_fit_title", "value": "Fit planner" }
+  }
 ]
