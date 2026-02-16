@@ -108,7 +108,7 @@ const Hello = () => {
           text="Github"
           icon="github"
           size="16px"
-          redirectUrl="https://github.com/"
+          redirectUrl="https://github.com/exvite"
         />
         <Pill
           text="Joeliglesiasjimenez@gmail.com"
