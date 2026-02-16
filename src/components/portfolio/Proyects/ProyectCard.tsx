@@ -146,11 +146,18 @@ interface ProyectCardProps {
   icons: string[];
   status: "live" | "dev";
   statusLabel: string;
+  url?: string;
 }
 
 const ProyectCard = (props: ProyectCardProps) => {
+  const handleClick = () => {
+    if (props.url) {
+      window.open(props.url, "_blank");
+    }
+  };
+
   return (
-    <Container>
+    <Container onClick={handleClick}>
       <ImageContainer>
         <TopBadges>
           <IconsRow>

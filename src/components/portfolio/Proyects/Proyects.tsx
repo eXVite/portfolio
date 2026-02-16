@@ -88,6 +88,7 @@ const Proyects = () => {
           icons={["react", "express", "aws", "net"]}
           status="live"
           statusLabel={t("proyects_status_live", "Online")}
+          url="https://nutriai.joelware.com"
         />
         <ProyectCard
           backgroundImage="balance_card.webp"
@@ -99,6 +100,7 @@ const Proyects = () => {
           icons={["react", "express", "aws"]}
           status="live"
           statusLabel={t("proyects_status_live", "Online")}
+          url="https://balance.joelware.com"
         />
         <ProyectCard
           backgroundImage="calendar_card.webp"
