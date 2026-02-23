@@ -33,15 +33,7 @@ const ContentWrapper = styled.div`
   }
 `;
 
-const Image = styled.img`
-  height: 22rem;
-  width: 15rem;
-  padding: 0 1rem 1rem 0;
-  background-color: ${(props) => props.theme.colors.grey200};
-`;
-
 const DescSpan = styled.span`
-  width: 40rem;
   font-size: ${(props) => props.theme.fontSizes.m};
   line-height: calc(${(props) => props.theme.fontSizes.m} * 1.5);
 
@@ -76,7 +68,6 @@ const AboutMe = () => {
             ),
           }}
         />
-        <Image alt="Imagen personal 2" src="/images/joel_about_me.webp" />
       </ContentWrapper>
     </Container>
   );
