@@ -21,23 +21,15 @@ const Container = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled.div`
   height: 10rem;
   width: 10rem;
   background-color: grey;
+  background-image: url("/images/joel_hello.webp");
+  background-size: cover;
+  background-position: center;
   border-radius: 6rem;
 `;
-
-// const Title = styled.span`
-//   font-size: ${(props) => props.theme.fontSizes.xl};
-//   font-weight: 1000;
-//   color: ${(props) => props.theme.colors.lightText};
-
-//   b {
-//     font-weight: 1000;
-//     color: ${(props) => props.theme.colors.primary500};
-//   }
-// `;
 
 const Desc = styled.span`
   font-size: ${(props) => props.theme.fontSizes.m};
@@ -82,7 +74,7 @@ const Hello = () => {
 
   return (
     <Container id="Inicio">
-      <Image alt="Imagen personal" src="/images/joel_hello.webp" />
+      <Image />
       <Title
         light={true}
         dangerouslySetInnerHTML={{
